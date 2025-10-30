@@ -1,0 +1,46 @@
+{
+  "name": "claws-css",
+  "version": "0.3.0",
+  "description": "Pragmatic extensible CSS framework for building styling components and desgin systems",
+
+  "main": "./dist/claws.js",
+  "module": "./dist/claws.js",
+  "types": "./dist/claws.d.ts",
+  "type": "module",
+
+  "exports": {
+    ".": {
+      "import": "./dist/claws.js",
+      "types": "./dist/claws.d.ts"
+    }
+  },
+
+  "keywords": [
+    "css",
+    "styling",
+    "framework",
+    "typescript",
+    "plugin-based",
+    "responsive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hussein-L-AlMadhachi/claws-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hussein-L-AlMadhachi/claws-css/issues"
+  },
+  "homepage": "https://github.com/Hussein-L-AlMadhachi/claws-css#readme",
+
+  "license": "MIT",
+  "author": "Hussein Layth Al-Madhachi",
+  "scripts": {
+    "build":"tsc",
+    "dev":"tsc && node ./dist/model.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "typescript": "^5.9.3"
+  }
+}
