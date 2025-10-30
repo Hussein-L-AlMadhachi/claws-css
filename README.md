@@ -2080,10 +2080,8 @@ ClawsCSS is the successor to Clanga CSS, rebuilt from the ground up with a plugi
 
 ## Learn More
 
-* **GitHub:** [Link to repository]
+* **GitHub:** [visit github repository](https://github.com/Hussein-L-AlMadhachi/claws-css)
 * **npm:** `npm install claws-css`
-* **Discord:** [Community link]
-* **Examples:** [CodeSandbox examples]
 
 ---
 
