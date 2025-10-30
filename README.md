@@ -208,15 +208,15 @@ under the hood it looks like so
 
 component.style(selector: string, styles: {
 
-  all?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`,    // All screen sizes
-  xs?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`,     // ≤ 319px
-  sm?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`,     // ≤ 568px
-  md?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`,     // ≤ 768px
-  lg?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`,     // ≤ 1024px
-  xl?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`,     // ≤ 1280px
-  xxl?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`,    // ≤ 1920px
-  xxxl?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`,   // ≤ 2560px
-  xxxxl?: s`css-property-1${ "css-value" } css-property-2${ "css-value" } ...`   // ≤ 3840px
+  all?: s`css-property${ "css-value" }  ...`,    // All screen sizes
+  xs?: s`css-property${ "css-value" } ...`,     // ≤ 319px
+  sm?: s`css-property${ "css-value" } ...`,     // ≤ 568px
+  md?: s`css-property${ "css-value" } ...`,     // ≤ 768px
+  lg?: s`css-property${ "css-value" } ...`,     // ≤ 1024px
+  xl?: s`css-property${ "css-value" } ...`,     // ≤ 1280px
+  xxl?: s`css-property${ "css-value" } ...`,    // ≤ 1920px
+  xxxl?: s`css-property${ "css-value" } ...`,   // ≤ 2560px
+  xxxxl?: s`css-property${ "css-value" } ...`   // ≤ 3840px
 
 })
 ```
