@@ -27,6 +27,8 @@ It runs your JS/TS to compile it and generate static CSS optimised for small CSS
 
 > 🦴 A hand-forged CSS compiler framework, dependency-free, modular by design, written in TS.
 
+---
+
 ## Table of Contents
 
 * [Installation](#installation)
