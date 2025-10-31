@@ -64,6 +64,8 @@ It runs your JS/TS to compile it and generate static CSS optimised for small CSS
 
 ## Installation
 
+[back to table of content](#table-of-contents)
+
 ```bash
 npm install claws-css
 ```
@@ -105,7 +107,7 @@ navbar.style(".nav_item", {
 navbar.apply();
 ```
 
-**That's it!** Your CSS is automatically written to a `.css` with the same file when your script exits or when vite invokes compilation to enable hot module replacement
+**That's it!** Your CSS is automatically written to a `.css` with the same file name when your script exits or when vite invokes compilation to enable hot module replacement
 
 ---
 
