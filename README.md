@@ -1,4 +1,4 @@
-# 🐾 ClawsCSS
+# 🐾 ClawsCSS 🐾
 
 Build beautiful, responsive, scalable styles — **with pure TypeScript/JavaScript.**
 No dependencies. Just you and the code.
