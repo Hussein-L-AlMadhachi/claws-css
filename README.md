@@ -155,6 +155,8 @@ s`
 
 ### Scale System
 
+[back to table of content](#table-of-contents)
+
 Create mathematical scales for consistent spacing, sizing, and typography.
 
 #### Constructor
@@ -346,6 +348,8 @@ s`shadow${"md"}`
 [back to table of content](#table-of-contents)
 
 ### Animation Plugin
+
+[back to table of content](#table-of-contents)
 
 Control CSS animations with a powerful, type-safe API.
 
