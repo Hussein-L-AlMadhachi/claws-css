@@ -105,7 +105,7 @@ navbar.style(".nav_item", {
 navbar.apply();
 ```
 
-**That's it!** Your CSS is automatically written to a `.css` file when your script exits.
+**That's it!** Your CSS is automatically written to a `.css` with the same file when your script exits or when vite invokes compilation to enable hot module replacement
 
 ---
 
