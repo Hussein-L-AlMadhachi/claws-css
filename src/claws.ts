@@ -7,6 +7,12 @@ export {
     type ClawsPluginsMap,
 } from "./frontend/plugin.js";
 
+// compiler.ts genrates CSS before the process exits unless InvokeComplication is called
+export {
+    EnableDesktopFirst,
+    InvokeComplication
+} from "./backend/compiler.js";
+
 export {s ,type StylesTemplate } from "./frontend/s-template.js";
 
 export {
@@ -15,10 +21,6 @@ export {
 
 export { Scale } from "./helpers/scale.js";
 export { calc } from "./helpers/func.js";
-
-
-// enable CSS generation on exit
-import "./backend/compiler.js";
 
 // emabling core plugings
 import "./plugins/shortcuts.js";

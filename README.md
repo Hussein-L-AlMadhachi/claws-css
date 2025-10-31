@@ -1,9 +1,9 @@
-# 🐾 ClawsCSS 🐾
+# 🐾 Claws CSS 🐾
 
 Build beautiful, responsive, scalable styles — **with pure TypeScript/JavaScript.**
 No dependencies. Just you and the code.
 
-ClawsCSS is a **next-gen CSS framework and compiler** that gives you the **power of Tailwind**, the **flexibility of CSS-in-JS**, and the
+Claws CSS is a **next-gen CSS framework and compiler** that gives you the **power of Tailwind**, the **flexibility of CSS-in-JS**, and the
 **simplicity of vanilla TypeScript/JavaScript** — all in one.
 
 It’s fast, hackable, and completely yours.
@@ -11,7 +11,7 @@ No magic — just raw convenient control.
 
 ---
 
-## ⚡ Why ClawsCSS?
+## ⚡ Why Claws CSS?
 
 * **🚀 Responsive by Design** – Define styles for every breakpoint right in `.style()` — mobile-first, automatically.
 * **🧩 Plugin Powered** – Add or build plugins for `flex`, `grid`, `animation`, `shortcuts`, or anything you dream up.
@@ -20,7 +20,7 @@ No magic — just raw convenient control.
 * **🎨 Design Systems Made Simple** – Create your own scales for color, spacing, and typography.
 * **💨 Static Output** – Compiles down to clean, production-ready CSS — no runtime overhead.
 
-ClawsCSS isn’t here to control your workflow — it’s here to **embrase it.**
+Claws CSS isn’t here to control your workflow — it’s here to **embrase it.**
 It gives you the compiler, the tools, and the power — **you make the rules.**
 
 It runs your JS/TS to compile it and generate static CSS optimised for small CSS footprint that can be minified separately
@@ -50,6 +50,15 @@ It runs your JS/TS to compile it and generate static CSS optimised for small CSS
 * [Responsive Design](#responsive-design)
 * [Animation Support](#animation-support)
 * [Best Practices](#best-practices)
+* [Troubleshooting](#troubleshooting)
+
+* [Claws CSS Performance & Optimization](#performance-and-optimizations)
+* [Advanced Topics](#advanced-topics)
+* [FAQ](#faq)
+* [Contributing](#contributing)
+* [License](#license)
+* [Acknowledgments](#acknowledgments)
+* [Learn More](#learn-more)
 
 ---
 
@@ -62,6 +71,8 @@ npm install claws-css
 ---
 
 ## Quick Start
+
+[back to table of content](#table-of-contents)
 
 ```typescript
 import { Scale, Component, s } from 'claws-css';
@@ -100,9 +111,11 @@ navbar.apply();
 
 ## Core Concepts
 
+[back to table of content](#table-of-contents)
+
 ### Auto-Compilation
 
-ClawsCSS automatically compiles your styles to CSS when your Node.js process exits. No manual build step needed!
+Claws CSS automatically compiles your styles to CSS when your Node.js process exits. No manual build step needed!
 
 ```typescript
 // Just define and apply your styles
@@ -114,7 +127,9 @@ navbar.apply();
 
 ### Plugin System
 
-ClawsCSS uses a plugin architecture for extensibility. Virtual CSS properties like `flex` are plugins that expand to real CSS:
+[back to table of content](#table-of-contents)
+
+Claws CSS uses a plugin architecture for extensibility. Virtual CSS properties like `flex` are plugins that expand to real CSS:
 
 ```typescript
 s`flex${{ justify: "center" }}`
@@ -135,6 +150,8 @@ s`
 ---
 
 ## API Reference
+
+[back to table of content](#table-of-contents)
 
 ### Scale System
 
@@ -185,6 +202,8 @@ s`p${spacing.md} m${spacing.lg}`
 ---
 
 ### Component
+
+[back to table of content](#table-of-contents)
 
 Components manage collections of styles with responsive breakpoints.
 
@@ -259,6 +278,8 @@ newComponent.style( ".nav" {
 
 ### Template Literal (s)
 
+[back to table of content](#table-of-contents)
+
 The `s` template tag parses style definitions and applies plugins.
 
 this `` s` css-property${ "css-value" }` `` maps CSS properties and enables all plugins which
@@ -286,7 +307,7 @@ s`
 
 ### Plugin System
 
-Plugins extend ClawsCSS with virtual CSS properties.
+Plugins extend Claws CSS with virtual CSS properties.
 
 #### Registering a Plugin
 
@@ -321,6 +342,8 @@ s`shadow${"md"}`
 ---
 
 ## Built-in Plugins
+
+[back to table of content](#table-of-contents)
 
 ### Animation Plugin
 
@@ -635,7 +658,9 @@ Style(".loader", {
 
 ### Utility Shortcuts
 
-ClawsCSS includes convenient shorthand plugins for common CSS properties.
+[back to table of content](#table-of-contents)
+
+Claws CSS includes convenient shorthand plugins for common CSS properties.
 
 #### Sizing
 
@@ -825,6 +850,8 @@ hero.style(".hero", {
 
 ### Flex Plugin
 
+[back to table of content](#table-of-contents)
+
 Create flexbox layouts with an intuitive API.
 
 #### Syntax
@@ -870,6 +897,8 @@ s`flex${{ justify: "between", items: "stretch" }}`
 ---
 
 ### Flex Item Plugin
+
+[back to table of content](#table-of-contents)
 
 Control flex child properties.
 
@@ -932,6 +961,8 @@ Style(".item", {
 ---
 
 ### Grid Plugin
+
+[back to table of content](#table-of-contents)
 
 Create CSS Grid layouts with powerful features.
 
@@ -1030,6 +1061,8 @@ s`grid${{
 ---
 
 ### Grid Item Plugin
+
+[back to table of content](#table-of-contents)
 
 Control grid child placement and alignment with CSS optimization.
 
@@ -1146,7 +1179,9 @@ Style(".centered", {
 
 ## Creating Custom Plugins
 
-Extend ClawsCSS with your own virtual CSS properties.
+[back to table of content](#table-of-contents)
+
+Extend Claws CSS with your own virtual CSS properties.
 
 ### Basic Plugin
 
@@ -1216,11 +1251,13 @@ s`glass${0.3}`
 
 ## Responsive Design
 
-ClawsCSS uses mobile-first responsive breakpoints.
+[back to table of content](#table-of-contents)
+
+Claws CSS uses mobile-first responsive breakpoints.
 
 ### Breakpoints
 
-| Breakpoint | Max Width | Usage |
+| Breakpoint | Min Width | Usage |
 |------------|-----------|-------|
 | `all` | - | All screen sizes (default) |
 | `xs` | 319px | Very small phones |
@@ -1231,6 +1268,8 @@ ClawsCSS uses mobile-first responsive breakpoints.
 | `xxl` | 1920px | Desktops |
 | `xxxl` | 2560px | Large displays |
 | `xxxxl` | 3840px | 4K displays |
+
+> if you'd like to use Max width responsive queries use `EnableDesktopFirst()`
 
 ### Example
 
@@ -1266,6 +1305,8 @@ xl: s`p${spacing.lg}`
 ---
 
 ## Animation Support
+
+[back to table of content](#table-of-contents)
 
 Create smooth animations with the `KeyFrame` class and animation plugin.
 
@@ -1416,6 +1457,8 @@ See the [Animation Plugin](#animation-plugin) section for complete API reference
 
 ## Best Practices
 
+[back to table of content](#table-of-contents)
+
 ### 1. Use Scales for Consistency
 
 ```typescript
@@ -1468,7 +1511,7 @@ s`grid${{ cols: "250px 1fr 200px" }}`  // This doesn't work!
 ### 5. Use CSS Optimization Features
 
 ```typescript
-// ✅ Good: Let ClawsCSS optimize
+// ✅ Good: Let Claws CSS optimize
 s`grid-item${{ 
   col: [1, 3], 
   row: [2, 4],
@@ -1498,7 +1541,7 @@ s`animation${{
   fillMode: "both"
 }}`
 
-// ❌ Bad: Manual CSS string (less control, no validation) 
+// ❌ Bad: Manual CSS string (less control, no validation) also s`` disables it by default to not
 s`animation:fadeIn 500ms ease-out both`
 ```
 
@@ -1781,6 +1824,8 @@ form.apply();
 
 ## Troubleshooting
 
+[back to table of content](#table-of-contents)
+
 ### Styles Not Appearing
 
 1. **Did you call `.apply()`?**
@@ -1848,11 +1893,13 @@ form.apply();
 
 ---
 
-## Performance & Optimization
+## Performance and Optimizations
+
+[back to table of content](#table-of-contents)
 
 ### CSS Output Optimization
 
-ClawsCSS automatically optimizes CSS output:
+Claws CSS automatically optimizes CSS output:
 
 1. **Grid Area Shorthand:** When both `col` and `row` are set, uses `grid-area`
 
@@ -1886,7 +1933,7 @@ ClawsCSS automatically optimizes CSS output:
 2. **Leverage CSS optimizations:**
 
    ```typescript
-   // Let ClawsCSS optimize automatically
+   // Let Claws CSS optimize automatically
    grid-item${{ col: [1, 3], row: [2, 4] }}  // Uses grid-area
    ```
 
@@ -1899,46 +1946,9 @@ ClawsCSS automatically optimizes CSS output:
 
 ---
 
-## Migration Guide
-
-### From Clanga CSS
-
-ClawsCSS is the spiritual successor to Clanga CSS with improved architecture:
-
-**Key Changes:**
-
-1. **Template Literals over Method Chaining:**
-
-   ```typescript
-   // Clanga
-   Div().align({ xcenter: true }).shape({ w: "100%" })
-   
-   // ClawsCSS
-   s`w${"100%"} mx${"auto"}`
-   ```
-
-2. **Plugin System:**
-
-   ```typescript
-   // ClawsCSS uses extensible plugins
-   ClawsPluginRegistry.register("custom", (val) => ({ ... }))
-   ```
-
-3. **Auto-Compilation:**
-
-   ```typescript
-   // No more manual .apply() everywhere
-   component.apply()  // Just once at the end
-   ```
-
-4. **Simplified API:**
-   * Shorter property names (`p`, `m`, `w`, `h`)
-   * More intuitive flex/grid syntax
-   * Array support for grid templates
-
----
-
 ## Advanced Topics
+
+[back to table of content](#table-of-contents)
 
 ### Creating Plugin Packs
 
@@ -2010,29 +2020,31 @@ theme.apply();
 
 ## FAQ
 
-### Can I use ClawsCSS with React/Vue/Svelte?
+[back to table of content](#table-of-contents)
 
-Yes! ClawsCSS generates plain CSS files that work with any framework.
+### Can I use Claws CSS with React/Vue/Svelte?
 
-### How do I use ClawsCSS in production?
+Yes! Claws CSS generates plain CSS files that work with any framework.
+
+### How do I use Claws CSS in production?
 
 Run your Node.js script during build time. The generated `.css` file is what you deploy.
 
-### Can I use ClawsCSS without TypeScript?
+### Can I use Claws CSS without TypeScript?
 
 Yes! The plugin system works in vanilla JavaScript. You'll just lose type checking.
 
-### How does ClawsCSS compare to Tailwind?
+### How does Claws CSS compare to Tailwind?
 
-* **ClawsCSS:** Write styles programmatically with plugins, generates custom CSS
+* **Claws CSS:** Write styles programmatically with plugins, generates custom CSS
 * **Tailwind:** Utility-first classes in HTML, larger CSS bundle
-* **Use ClawsCSS when:** You want programmatic styling, type safety, and custom design systems
+* **Use Claws CSS when:** You want programmatic styling, type safety, and custom design systems
 
 ### Can I extend the Scale system?
 
 Yes! Create custom scale algorithms by modifying the Scale class or create wrapper functions.
 
-### Does ClawsCSS support theming?
+### Does Claws CSS support theming?
 
 Yes! Create theme objects and use them throughout your styles:
 
@@ -2052,7 +2064,9 @@ s`bg${theme.colors.primary} p${theme.spacing.lg}`
 
 ## Contributing
 
-Contributions welcome! ClawsCSS is open source and we'd love your help.
+[back to table of content](#table-of-contents)
+
+Contributions welcome! Claws CSS is open source and we'd love your help.
 
 **Ways to Contribute:**
 
@@ -2060,11 +2074,13 @@ Contributions welcome! ClawsCSS is open source and we'd love your help.
 * Suggest new features or plugins
 * Submit pull requests
 * Improve documentation
-* Share your projects built with ClawsCSS
+* Share your projects built with Claws CSS
 
 ---
 
 ## License
+
+[back to table of content](#table-of-contents)
 
 MIT License - See LICENSE file for details
 
@@ -2072,13 +2088,17 @@ MIT License - See LICENSE file for details
 
 ## Acknowledgments
 
-ClawsCSS is the successor to Clanga CSS, rebuilt from the ground up with a plugin-first architecture for maximum extensibility and developer experience.
+[back to table of content](#table-of-contents)
+
+Claws CSS is the successor to [Clanga CSS](https://github.com/Hussein-L-AlMadhachi/clanga), rebuilt from the ground up with a plugin-first architecture for extensibility and developer experience.
 
 **Philosophy:** Styling should be programmatic, type-safe, and optimized by default.
 
 ---
 
 ## Learn More
+
+[back to table of content](#table-of-contents)
 
 * **GitHub:** [visit github repository](https://github.com/Hussein-L-AlMadhachi/claws-css)
 * **npm:** `npm install claws-css`
@@ -2105,4 +2125,4 @@ app.style(".app", {
 app.apply();
 ```
 
-**Welcome to ClawsCSS.** 🦅
+**Welcome to Claws CSS.** 🦅
