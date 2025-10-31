@@ -20,8 +20,6 @@ No magic — just raw convenient control.
 * **🎨 Design Systems Made Simple** – Create your own scales for color, spacing, and typography.
 * **💨 Static Output** – Compiles down to clean, production-ready CSS — no runtime overhead.
 
----
-
 ClawsCSS isn’t here to control your workflow — it’s here to **embrase it.**
 It gives you the compiler, the tools, and the power — **you make the rules.**
 
