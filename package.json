@@ -1,6 +1,6 @@
 {
   "name": "claws-css",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Pragmatic extensible CSS framework for building styling components and desgin systems",
   "main": "./dist/src/claws.js",
   "module": "./dist/src/claws.js",
