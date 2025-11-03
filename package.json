@@ -1,6 +1,6 @@
 {
   "name": "claws-css",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Pragmatic extensible CSS framework for building styling components and desgin systems",
 
   "main": "./dist/src/claws.js",
@@ -10,8 +10,8 @@
 
   "exports": {
     ".": {
-      "import": "./dist/claws.js",
-      "types": "./dist/claws.d.ts"
+      "import": "./dist/src/claws.js",
+      "types": "./dist/src/claws.d.ts"
     }
   },
 
