@@ -3,9 +3,9 @@
   "version": "0.3.0",
   "description": "Pragmatic extensible CSS framework for building styling components and desgin systems",
 
-  "main": "./dist/claws.js",
-  "module": "./dist/claws.js",
-  "types": "./dist/claws.d.ts",
+  "main": "./dist/src/claws.js",
+  "module": "./dist/src/claws.js",
+  "types": "./dist/src/claws.d.ts",
   "type": "module",
 
   "exports": {
