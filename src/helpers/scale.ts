@@ -47,7 +47,7 @@ export class Scale {
     }
 
     public size( n:number ):string {
-        const calculatedValue = Math.ceil( this.base*(this.scale ** n) / 4 ) * 4; //rounded to the closest four
+        const calculatedValue = Math.floor( this.base*(this.scale ** n) ); //rounded to the closest two
         return `${ calculatedValue }${this.unit}`
     }
 
