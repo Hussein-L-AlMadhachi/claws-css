@@ -92,7 +92,7 @@ navbar.style(".nav", {
     flex${{ justify: "between", items: "center" }}
   `,
   sm: s`
-    flex${{ dir: "col" }}
+    flex${{ vertical: true }}
   `
 });
 
@@ -1287,7 +1287,7 @@ navbar.style(".nav", {
   `,
   
   md: s`
-    flex${{ dir: "col" }}
+    flex${{ vertical: true }}
     p${spacing.md}
   `,
   
@@ -1301,7 +1301,7 @@ navbar.style(".nav", {
 
 ```typescript
 // Start with mobile (all)
-all: s`flex${{ dir: "col" }} p${spacing.sm}`,
+all: s`flex${{ vertical: true }} p${spacing.sm}`,
 
 // Override for larger screens
 md: s`flex${{ dir: "row" }} p${spacing.md}`,
@@ -1493,14 +1493,14 @@ const styles = new Component();
 ```typescript
 // ✅ Good: Start mobile, override larger
 navbar.style(".nav", {
-  all: s`flex${{ dir: "col" }}`,    // Mobile first
+  all: s`flex${{ vertical: true }}`,    // Mobile first
   md: s`flex${{ dir: "row" }}`      // Desktop override
 });
 
 // ❌ Bad: Desktop-first requires more overrides
 navbar.style(".nav", {
   all: s`flex${{ dir: "row" }}`,
-  sm: s`flex${{ dir: "col" }}`
+  sm: s`flex${{ vertical: true }}`
 });
 ```
 
@@ -1619,7 +1619,7 @@ navbar.style(".navbar", {
     animation${{ keyframe: slideIn, time: "300ms", func: "ease-out" }}
   `,
   sm: s`
-    flex${{ dir: "col" }}
+    flex${{ vertical: true }}
     p${spacing.md}
   `
 });
@@ -1795,7 +1795,7 @@ form.style(".form", {
 
 form.style(".form-field", {
   all: s`
-    flex${{ dir: "col" }}
+    flex${{ vertical: true }}
     gap${spacing.sm}
   `
 });
